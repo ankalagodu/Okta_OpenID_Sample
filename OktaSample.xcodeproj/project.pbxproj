@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29236137212BF3CA006B1CBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29236136212BF3CA006B1CBD /* AppDelegate.swift */; };
+		29236139212BF3CA006B1CBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29236138212BF3CA006B1CBD /* ViewController.swift */; };
+		2923613C212BF3CA006B1CBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2923613A212BF3CA006B1CBD /* Main.storyboard */; };
+		2923613E212BF3CA006B1CBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2923613D212BF3CA006B1CBD /* Assets.xcassets */; };
+		29236141212BF3CA006B1CBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2923613F212BF3CA006B1CBD /* LaunchScreen.storyboard */; };
+		29236149212BF450006B1CBD /* Okta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29236148212BF450006B1CBD /* Okta.plist */; };
+		2923615F212D3F27006B1CBD /* WSDSwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2923615E212D3F27006B1CBD /* WSDSwiftyJSON.swift */; };
+		29236161212D3F41006B1CBD /* WSDWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29236160212D3F41006B1CBD /* WSDWebService.swift */; };
+		29236163212D3F4D006B1CBD /* WSDWebServices+Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29236162212D3F4D006B1CBD /* WSDWebServices+Login.swift */; };
+		29236165212D3F55006B1CBD /* WSDWebServices+OktaLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29236164212D3F55006B1CBD /* WSDWebServices+OktaLogin.swift */; };
+		29236167212D40F0006B1CBD /* WSDWebService+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29236166212D40F0006B1CBD /* WSDWebService+Auth.swift */; };
+		67C9CAF84726BD5966DAF439 /* Pods_OktaSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50972B2B25541551BD35DE42 /* Pods_OktaSample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21412FDFFD312820C3CCA8EC /* Pods-OktaSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OktaSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OktaSample/Pods-OktaSample.debug.xcconfig"; sourceTree = "<group>"; };
+		29236133212BF3C9006B1CBD /* OktaSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OktaSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29236136212BF3CA006B1CBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		29236138212BF3CA006B1CBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2923613B212BF3CA006B1CBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2923613D212BF3CA006B1CBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		29236140212BF3CA006B1CBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		29236142212BF3CA006B1CBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29236148212BF450006B1CBD /* Okta.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Okta.plist; sourceTree = "<group>"; };
+		2923615E212D3F27006B1CBD /* WSDSwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSDSwiftyJSON.swift; sourceTree = "<group>"; };
+		29236160212D3F41006B1CBD /* WSDWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSDWebService.swift; sourceTree = "<group>"; };
+		29236162212D3F4D006B1CBD /* WSDWebServices+Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WSDWebServices+Login.swift"; sourceTree = "<group>"; };
+		29236164212D3F55006B1CBD /* WSDWebServices+OktaLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WSDWebServices+OktaLogin.swift"; sourceTree = "<group>"; };
+		29236166212D40F0006B1CBD /* WSDWebService+Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WSDWebService+Auth.swift"; sourceTree = "<group>"; };
+		50972B2B25541551BD35DE42 /* Pods_OktaSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OktaSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF23C98EC645121483EE563 /* Pods-OktaSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OktaSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-OktaSample/Pods-OktaSample.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29236130212BF3C9006B1CBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C9CAF84726BD5966DAF439 /* Pods_OktaSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2923612A212BF3C9006B1CBD = {
+			isa = PBXGroup;
+			children = (
+				29236135212BF3C9006B1CBD /* OktaSample */,
+				29236134212BF3C9006B1CBD /* Products */,
+				74E798A71D131A421EFF977D /* Pods */,
+				423A6CEC145282908CCA402D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		29236134212BF3C9006B1CBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29236133212BF3C9006B1CBD /* OktaSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29236135212BF3C9006B1CBD /* OktaSample */ = {
+			isa = PBXGroup;
+			children = (
+				29236136212BF3CA006B1CBD /* AppDelegate.swift */,
+				29236138212BF3CA006B1CBD /* ViewController.swift */,
+				2923613A212BF3CA006B1CBD /* Main.storyboard */,
+				2923613D212BF3CA006B1CBD /* Assets.xcassets */,
+				2923613F212BF3CA006B1CBD /* LaunchScreen.storyboard */,
+				29236142212BF3CA006B1CBD /* Info.plist */,
+				29236148212BF450006B1CBD /* Okta.plist */,
+				29236160212D3F41006B1CBD /* WSDWebService.swift */,
+				29236162212D3F4D006B1CBD /* WSDWebServices+Login.swift */,
+				29236164212D3F55006B1CBD /* WSDWebServices+OktaLogin.swift */,
+				29236166212D40F0006B1CBD /* WSDWebService+Auth.swift */,
+				2923614A212D3EFC006B1CBD /* Helper */,
+			);
+			path = OktaSample;
+			sourceTree = "<group>";
+		};
+		2923614A212D3EFC006B1CBD /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2923615E212D3F27006B1CBD /* WSDSwiftyJSON.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		423A6CEC145282908CCA402D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50972B2B25541551BD35DE42 /* Pods_OktaSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74E798A71D131A421EFF977D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21412FDFFD312820C3CCA8EC /* Pods-OktaSample.debug.xcconfig */,
+				DAF23C98EC645121483EE563 /* Pods-OktaSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29236132212BF3C9006B1CBD /* OktaSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29236145212BF3CA006B1CBD /* Build configuration list for PBXNativeTarget "OktaSample" */;
+			buildPhases = (
+				A558925A83B61724625E591E /* [CP] Check Pods Manifest.lock */,
+				2923612F212BF3C9006B1CBD /* Sources */,
+				29236130212BF3C9006B1CBD /* Frameworks */,
+				29236131212BF3C9006B1CBD /* Resources */,
+				0EA7F1CF3B4B98C617EDFDCD /* [CP] Embed Pods Frameworks */,
+				E15889140968A8384B75CD34 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OktaSample;
+			productName = OktaSample;
+			productReference = 29236133212BF3C9006B1CBD /* OktaSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2923612B212BF3C9006B1CBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Wolken Software Pvt Ltd";
+				TargetAttributes = {
+					29236132212BF3C9006B1CBD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2923612E212BF3C9006B1CBD /* Build configuration list for PBXProject "OktaSample" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2923612A212BF3C9006B1CBD;
+			productRefGroup = 29236134212BF3C9006B1CBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29236132212BF3C9006B1CBD /* OktaSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29236131212BF3C9006B1CBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29236141212BF3CA006B1CBD /* LaunchScreen.storyboard in Resources */,
+				2923613E212BF3CA006B1CBD /* Assets.xcassets in Resources */,
+				2923613C212BF3CA006B1CBD /* Main.storyboard in Resources */,
+				29236149212BF450006B1CBD /* Okta.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EA7F1CF3B4B98C617EDFDCD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OktaSample/Pods-OktaSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A558925A83B61724625E591E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E15889140968A8384B75CD34 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OktaSample/Pods-OktaSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2923612F212BF3C9006B1CBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29236165212D3F55006B1CBD /* WSDWebServices+OktaLogin.swift in Sources */,
+				29236139212BF3CA006B1CBD /* ViewController.swift in Sources */,
+				29236137212BF3CA006B1CBD /* AppDelegate.swift in Sources */,
+				2923615F212D3F27006B1CBD /* WSDSwiftyJSON.swift in Sources */,
+				29236163212D3F4D006B1CBD /* WSDWebServices+Login.swift in Sources */,
+				29236167212D40F0006B1CBD /* WSDWebService+Auth.swift in Sources */,
+				29236161212D3F41006B1CBD /* WSDWebService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2923613A212BF3CA006B1CBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2923613B212BF3CA006B1CBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2923613F212BF3CA006B1CBD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29236140212BF3CA006B1CBD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		29236143212BF3CA006B1CBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		29236144212BF3CA006B1CBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29236146212BF3CA006B1CBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21412FDFFD312820C3CCA8EC /* Pods-OktaSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9WZXLULP4;
+				INFOPLIST_FILE = OktaSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wolkensoftware.wolkenservicedesk.OktaSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		29236147212BF3CA006B1CBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAF23C98EC645121483EE563 /* Pods-OktaSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9WZXLULP4;
+				INFOPLIST_FILE = OktaSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wolkensoftware.wolkenservicedesk.OktaSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2923612E212BF3C9006B1CBD /* Build configuration list for PBXProject "OktaSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29236143212BF3CA006B1CBD /* Debug */,
+				29236144212BF3CA006B1CBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29236145212BF3CA006B1CBD /* Build configuration list for PBXNativeTarget "OktaSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29236146212BF3CA006B1CBD /* Debug */,
+				29236147212BF3CA006B1CBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2923612B212BF3C9006B1CBD /* Project object */;
+}
